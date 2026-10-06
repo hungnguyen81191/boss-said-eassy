@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Sếp Bảo Là Dễ",
+    "slug": "sep-bao-la-de",
+    "scheme": "sepbaolade",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1f2e"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sepbaolade.game",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a1f2e"
+      },
+      "package": "com.sepbaolade.game",
+      "versionCode": 1
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "privacyPolicyUrl": "https://raw.githubusercontent.com/hungnguyen81191/sep-bao-la-de/main/docs/privacy-policy.md",
+      "eas": {
+        "projectId": "bb1ee86d-1067-4acc-8b47-df5c8e69030b"
+      }
+    },
+    "owner": "hungzz1"
+  }
+}

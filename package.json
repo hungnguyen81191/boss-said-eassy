@@ -1,0 +1,17 @@
+{
+  "name": "sep-bao-la-de",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "mobile"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=mobile",
+    "web": "npm run web --workspace=mobile",
+    "ios": "npm run ios --workspace=mobile",
+    "android": "npm run android --workspace=mobile",
+    "build:ios": "npm run build:ios --workspace=mobile",
+    "build:android": "npm run build:android --workspace=mobile",
+    "check:submit": "node scripts/check-submit-ready.mjs"
+  }
+}

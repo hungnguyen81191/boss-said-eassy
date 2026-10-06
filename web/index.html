@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Sếp Bảo Là Dễ — Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/game.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="hud">
+      <div class="hud-left">
+        <span class="logo">Sếp Bảo Là Dễ</span>
+        <span class="level">Màn 1 · In tài liệu · Web</span>
+      </div>
+      <div class="hud-right">
+        <span class="clock" id="clock">08:42</span>
+        <div class="stars" id="stars" aria-label="Sao">
+          <span class="star" data-star="1">★</span>
+          <span class="star" data-star="2">★</span>
+          <span class="star" data-star="3">★</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="stage-wrap">
+      <div class="scene" id="scene">
+        <img src="assets/office-scene-bg.jpg" alt="Văn phòng" class="scene-bg" draggable="false" />
+        <div class="cabinet-drag ghost" id="cabinetGhost" hidden></div>
+      </div>
+    </main>
+
+    <aside class="inventory" id="inventory" aria-label="Túi đồ"></aside>
+
+    <footer class="dialogue" id="dialogue" hidden>
+      <img src="assets/boss-sep.jpg" alt="" class="dialogue-portrait" />
+      <div class="dialogue-body">
+        <p class="dialogue-name" id="dialogueName">Sếp</p>
+        <p class="dialogue-text" id="dialogueText"></p>
+        <button type="button" class="btn btn-primary" id="dialogueNext">Tiếp</button>
+      </div>
+    </footer>
+
+    <div class="overlay" id="overlay" hidden>
+      <div class="panel win-panel" id="winPanel" hidden>
+        <h2 id="winTitle">Xong việc!</h2>
+        <p id="winMessage"></p>
+        <div class="stars big" id="winStars"></div>
+        <button type="button" class="btn btn-primary" id="btnReplay">Chơi lại săn sao</button>
+      </div>
+    </div>
+
+    <nav class="toolbar">
+      <button type="button" class="btn btn-ghost" id="btnHint">Gợi ý (cà khịa)</button>
+      <button type="button" class="btn btn-ghost" id="btnCombine">Ghép đồ</button>
+      <button type="button" class="btn btn-ghost" id="btnGuard" hidden>Gọi bảo vệ</button>
+    </nav>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
